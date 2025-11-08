@@ -8,11 +8,24 @@
 
 // The largest number in the array ==> The second exercise
 
-let numArray = [12,15,68,23,20,102,36,83,41,78]
-let result = numArray[0];
+// let numArray = [12,15,68,23,20,102,36,83,41,78]
+// let result = numArray[0];
+// for (var i = 0; i < numArray.length; i++){
+//     if(result <= numArray[i]){
+//         result = numArray[i]
+//     }
+// }
+// console.log(result);
+
+// Exercise sum of even numbers ==> The third exercise
+
+let numArray = [12,15,18,19,3,12,3,5,4,13]
+let even = 0, odd = 0;
 for (var i = 0; i < numArray.length; i++){
-    if(result <= numArray[i]){
-        result = numArray[i]
-    }
+    if (numArray[i] % 2 == 0)
+        even += numArray[i]
+    else
+        odd += numArray[i]
 }
-console.log(result);
+console.log("Total results (odd) : ", odd);
+console.log("Total results (even) : ", even);
