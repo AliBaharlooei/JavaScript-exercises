@@ -41,12 +41,27 @@
 // console.log(reverseArray);
 
 //Remove duplicate values ==> The fifth exercise
-let numArray = [83,90,97,81,83,85,90,78,79,85];
-let number = [];
-for(var i = 0; i < numArray.length; i++){
-    
-    if(number.includes(numArray[i]) == false){
-        number.push(numArray[i])
+// let numArray = [83,90,97,81,83,85,90,78,79,85];
+// let number = [];
+// for(var i = 0; i < numArray.length; i++){
+
+//     if(number.includes(numArray[i]) == false){
+//         number.push(numArray[i])
+//     }
+// }
+// console.log(number);
+
+//Sum of array values ==> The sixth exercise
+var numArray = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+var sum = 0;
+for(var i = 0; i < 3; i++){
+
+    for(var j = 0; j < 3; j++){
+        sum += numArray[i][j]
     }
 }
-console.log(number);
+console.log(sum);
