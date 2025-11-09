@@ -52,16 +52,31 @@
 // console.log(number);
 
 //Sum of array values ==> The sixth exercise
-var numArray = [
+// var numArray = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ]
+// var sum = 0;
+// for(var i = 0; i < 3; i++){
+
+//     for(var j = 0; j < 3; j++){
+//         sum += numArray[i][j]
+//     }
+// }
+// console.log(sum);
+
+// Converting a two-dimensional array to a one-dimensional one
+let twoDimensional = [
     [1,2,3],
     [4,5,6],
     [7,8,9]
-]
-var sum = 0;
+];
+let oneDimensional = [];
 for(var i = 0; i < 3; i++){
-
     for(var j = 0; j < 3; j++){
-        sum += numArray[i][j]
+        oneDimensional.push(twoDimensional[i][j])
     }
 }
-console.log(sum);
+console.log(oneDimensional);
+
