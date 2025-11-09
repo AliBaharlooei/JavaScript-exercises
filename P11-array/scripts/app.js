@@ -19,13 +19,23 @@
 
 // Exercise sum of even numbers ==> The third exercise
 
-let numArray = [12,15,18,19,3,12,3,5,4,13]
-let even = 0, odd = 0;
-for (var i = 0; i < numArray.length; i++){
-    if (numArray[i] % 2 == 0)
-        even += numArray[i]
-    else
-        odd += numArray[i]
+// let numArray = [12,15,18,19,3,12,3,5,4,13]
+// let even = 0, odd = 0;
+// for (var i = 0; i < numArray.length; i++){
+//     if (numArray[i] % 2 == 0)
+//         even += numArray[i]
+//     else
+//         odd += numArray[i]
+// }
+// console.log("Total results (odd) : ", odd);
+// console.log("Total results (even) : ", even);
+
+// Reverse the numbers ==> The fourth exercise
+
+let numArray = [10, 15, 20, 25, 30, 35, 40];
+let reverseArray = [];
+
+for(var i = numArray.length; i >= 0; i--){
+    reverseArray.push(numArray[i])
 }
-console.log("Total results (odd) : ", odd);
-console.log("Total results (even) : ", even);
+console.log(reverseArray);
