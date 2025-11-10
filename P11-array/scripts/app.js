@@ -67,16 +67,31 @@
 // console.log(sum);
 
 // Converting a two-dimensional array to a one-dimensional one
-let twoDimensional = [
+// let twoDimensional = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ];
+// let oneDimensional = [];
+// for(var i = 0; i < 3; i++){
+//     for(var j = 0; j < 3; j++){
+//         oneDimensional.push(twoDimensional[i][j])
+//     }
+// }
+// console.log(oneDimensional);
+
+// Sum of numbers within array elements
+let numArray = [
     [1,2,3],
     [4,5,6],
     [7,8,9]
 ];
-let oneDimensional = [];
-for(var i = 0; i < 3; i++){
-    for(var j = 0; j < 3; j++){
-        oneDimensional.push(twoDimensional[i][j])
+let sumArray = [];
+for (var i = 0; i < 3; i++){
+    var total = 0;
+    for (var j = 0; j < 3; j++){
+        total += numArray[i][j]
     }
+    sumArray.push(total)
 }
-console.log(oneDimensional);
-
+console.log(sumArray);
