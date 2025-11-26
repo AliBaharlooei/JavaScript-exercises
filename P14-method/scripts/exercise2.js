@@ -84,5 +84,5 @@ let students = [
 let resultFindName = students.filter(findName => findName.userName.startsWith("A"));
 console.log(resultFindName);
 
-let resultFindAge = students.map(findAge => findAge.userAge > 22);
+let resultFindAge = students.filter(findAge => findAge.userAge > 23);
 console.log(resultFindAge);
