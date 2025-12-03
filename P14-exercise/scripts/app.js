@@ -87,12 +87,12 @@ const searchInput = document.getElementById('container-top__search')
 const searchBtn = document.getElementById('container-top__submit')
 
 window.onload = () =>{
-    containerResult.innerHTML = createStudents(students)
+    containerResult.innerHTML = generateStudent(students)
 }
 
-let createStudents = student => {
+let generateStudent = studentsArray => {
     let str = '';
-    students.forEach(element => {
+    studentsArray.forEach(element =>{
         str += `
         <div class="container-bottom__result">
             <p>Full name : ${element.userName}</p>
@@ -103,6 +103,17 @@ let createStudents = student => {
             <p>City : ${element.userCity}</p>
         </div>
     `});
-        return str;
-}
+    return str
+};
 
+searchBtn.onclick = () =>{
+    let valueOfSearch = searchInput.value;
+    let filterStudens = students.filter(element =>{
+       return element.userName.startsWith(valueOfSearch)
+    });
+    
+    if(filterStudens.length > 0)
+        containerResult.innerHTML = generateStudent(filterStudens)
+    else
+        containerResult.innerHTML = '<p> Not find </p>';
+}
