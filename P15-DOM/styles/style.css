@@ -1,19 +1,16 @@
-.new-style{
-    font-size: 21px;
-    color: green;
+#change-color{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(15, 116, 999);
+    color: white;
+    border: none;
+    border-radius: 12px;
 }
-#change-text__box{
+#box-random-color{
     width: 200px;
     height: 200px;
     background: red;
-}
-#change-text__blue{
-    width: 200px;
-    height: 200px;
-    background: blue;
-}
-#change-text__box-green{
-    width: 200px;
-    height: 200px;
-    background: green;
+    margin-top: 15px;
+    border-radius: 12px;
 }
