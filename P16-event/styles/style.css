@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container-left{
+    margin: 20px;
+    text-align: center;
+    font-size: 21px;
+}
+.container-right{
+    text-align: center;
+    font-size: 21px;
+}
+#container-left__duble-click{
+    color: darkred;
+}
+#container-left__click{
+    color: darkgreen;
+}
