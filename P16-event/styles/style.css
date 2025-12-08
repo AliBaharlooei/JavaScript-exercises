@@ -2,54 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    direction: ltr;
 }
-.container{
+body{
     display: flex;
-    align-items: start;
-    justify-content: space-between;
+    height: 100vh;
 }
-#mobile-menu{
+.box{
+    width: 250px;
+    height: 60px;
+    background-color: lightblue;
+    border-radius: 12px;
+    text-align: center;
     display: flex;
-    margin: 20px 50px;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    border: 2px solid #74C0FC;
-    border-radius: 12px;
-    width: 150px;
-}
-.close::after{
-    content: "Close menu";
-    font-size: 25px;
-    color: rgb(214, 76, 76);
-    transition: all .25s;
-}
-.open::after{
-    content: "Open menu";
-    font-size: 25px;
-    color: #48a8f1;
-    transition: all .25s;
-}
-.right-menu{
-    width: 0px;
-    height: 100vh;
-    background-color: #48a8f1;
-}
-.right-menu h2{
-    margin: 30px auto;
-    text-align: center;
-    color: aliceblue;
-}
-.show-menu{
-    animation: menu;
-    animation: menu 1s forwards;
-}
-@keyframes menu {
-    from {
-        width: 0;
-    }
-    to {
-        width: 250px;
-    }
+    font-size: 21px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
 }
