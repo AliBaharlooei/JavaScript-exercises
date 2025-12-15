@@ -5,6 +5,7 @@
 }
 body{
     display: flex;
+    flex-direction: column;
 }
 input{
     margin: 20px auto;
@@ -14,6 +15,11 @@ input{
     border-radius: 12px;
     text-align: center;
     outline: none;
+    color: purple;
+    font-size: 18px;
+}
+p{
+    text-align: center;
     color: purple;
     font-size: 18px;
 }
