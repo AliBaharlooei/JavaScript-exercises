@@ -9,12 +9,10 @@ document.addEventListener("keydown", event => {
             }
             break;
         case 'ArrowDown':
-            if(box.offsetParent.clientHeight > y){
+            if(box.offsetParent.clientHeight < y){
                 y += 10;
                 box.style.top = `${y}px`;
             }
-            y += 10;
-            box.style.top = `${y}px`;
             break;
         case 'ArrowRight':
             if(box.offsetParent.clientWidth > x){
