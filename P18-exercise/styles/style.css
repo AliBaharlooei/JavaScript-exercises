@@ -4,20 +4,32 @@
     box-sizing: border-box;
 }
 .container{
-    
+    /* border: 1px solid; */
+    width: 300px;
+    margin: 20px auto;
 }
 .box{
-
+    background-color: rgb(8, 77, 141);
+    border: 2px solid;
+    border-color: rgb(73, 132, 199);
+    margin: 5px 0;
+    border-radius: 7px;
+    padding: 20px;
+    color: rgb(235, 235, 235);
 }
 .box-title{
-
-}
-.box-title__text{
-
+    text-align: center;
+    margin: 15px;
+    font-size: 24px;
+    font-weight: bold;
 }
 .box-info{
-
+    line-height: 25px;
+    border-top: 2px solid;
+    padding-top: 15px;
+    font-size: 18px;
+    display: none;
 }
-.box-info__text{
-
+.open{
+    display: block;
 }
