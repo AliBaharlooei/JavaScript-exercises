@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>konkor</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">ثبت نام</h1>
+        <form action="" method="get">
+
+            <input type="text" name="userName" id="fullName" placeholder="نام کاربری خود را وارد کنید">
+            <label class="error" id="userNameError"></label>
+
+            <input type="email" name="userGmail" id="gmail" placeholder="ایمیل خود را وارد کنید">
+            <label class="error" id="userGmailError"></label>
+
+            <input type="password" name="userPassword" id="password" placeholder="رمز خود را وارد کنید">
+            <label class="error" id="userPasswordError"></label>
+
+            <input type="password" name="userRepeatPassword" id="repeatPassword" placeholder="رمز خود را مجدد وارد کنید">
+            <label class="error" id="userRepeatPasswoardError"></label>
+            
+            <button type="button" id="btnCheck">ثبت</button>
+        </form>
+    </div>
+    <p id="result">نمایش نتایج</p>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
