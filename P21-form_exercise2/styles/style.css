@@ -67,5 +67,7 @@ body{
     border: 1px dashed;
     border-radius: 12px;
     padding: 20px;
+    color: rgb(122, 173, 3);
+    font-size: 21px;
     visibility: hidden;
 }
