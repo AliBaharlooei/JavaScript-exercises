@@ -5,7 +5,7 @@ const btnCheck = document.getElementById("btnCheck");
 const result = document.getElementById("result");
 
 let fullValues = () => {
-    if(allInput.value == "" || trueTestInput.value == "" || falseTestInput == ""){
+    if(allInput.value == "" || trueTestInput.value == "" || falseTestInput.value == ""){
         result.innerText = "لطفا تمامی مقادیر پر کنید";
         result.style.visibility = "visible";
     }
@@ -22,6 +22,10 @@ let correctValues = () => {
 }
 
 btnCheck.addEventListener('click', () => {
+    let calculation = ((trueTestInput.value * 3) - falseTestInput.value) / (allInput.value * 3) * 100;
+    result.innerText = calculation + " %"
+    result.style.visibility = "visible";
     fullValues();
-    correctValues();    
+    correctValues();
 });
+
