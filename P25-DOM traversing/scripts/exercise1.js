@@ -1,0 +1,10 @@
+let container1  = document.querySelector('.container1');
+let boxContainer1 = container1.children;
+console.log(container1.nextElementSibling);
+console.log(boxContainer1[5].previousElementSibling);
+console.log(boxContainer1[2].nextElementSibling);
+console.log(container1.firstElementChild);
+console.log(container1.lastElementChild);
+console.log(boxContainer1[1].parentElement);
+console.log(boxContainer1[1].parentElement.nextElementSibling.children);
+console.log(boxContainer1[3].parentElement.nextElementSibling);
