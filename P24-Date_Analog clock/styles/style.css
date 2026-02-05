@@ -34,7 +34,6 @@ body{
     position: absolute;
     display: flex;
     justify-content: center;
-    transform: rotate(304deg);
 }
 #hour::after{
     content: "";
@@ -50,7 +49,6 @@ body{
     position: absolute;
     display: flex;
     justify-content: center;
-    transform: rotate(58deg);
 }
 #minutes::after{
     content: "";
@@ -66,7 +64,6 @@ body{
     position: absolute;
     display: flex;
     justify-content: center;
-    transform: rotate(220deg);
 }
 #second::after{
     content: "";
