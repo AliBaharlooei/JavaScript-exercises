@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,43 @@
     <title>Todo list</title>
 </head>
 <body>
-    
+    <!-- header -->
+    <header class="header">
+        <!-- header left -->
+        <div class="header-left">
+            <div class="header-left__logo">
+                <h1>To-Do App</h1>
+            </div>
+        </div>
+        <!-- header right -->
+         <div class="header-right">
+                <div class="header-right__profile">
+                    <img class="header-right__profile_img" src="imgs/علی بهاررلویی.jpg" alt="">
+                </div>
+         </div>
+    </header>
+    <main>
+        <div class="container">
+            <!-- container activity -->
+            <div class="container-activity">
+                <!-- add task -->
+                <div class="container-activity__add_task">
+                    <button id="btn_add-task">افزودن تسک</button>
+                </div>
+                <!-- details -->
+                <div class="container-activity__details">
+                    <button id="all-details" >همه</button>
+                    <button id="active-details">فعال</button>
+                    <button id="compeleted-details">تکمیل شده</button>                    
+                </div>
+                <!-- search box -->
+                <div class="container-activity__search">
+                    <input type="search" name="search" id="search">
+                    <button type="submit" id="btn_search">جستجو</button>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="scripts/app.js"></script>
 </body>
 </html>
