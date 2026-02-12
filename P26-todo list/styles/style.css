@@ -52,17 +52,18 @@
     border: none;
     border-radius: 7px;
 }
+.details-active{
+    background-color: var(--color-primary);
+    color: rgb(253, 253, 253) !important;
+}
 .container-activity__details button{
     width: 80px;
     height: 30px;
     font-size: 18px;
-    background-color: rgba(241, 241, 241, 0.664);
-    color: rgb(78, 78, 78);
     border: none;
     border-radius: 7px;
+    color: rgb(34, 34, 34);
 }
-
-
 .container-activity__search button{
     height: 30px;
     width: 70px;
@@ -88,3 +89,4 @@
     border-radius: 7px;
     margin-left: 7px;
 }
+/* list works */
