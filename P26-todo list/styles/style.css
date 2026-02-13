@@ -90,3 +90,37 @@
     margin-left: 7px;
 }
 /* list works */
+.container-todo{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    flex-flow: wrap;
+    
+}
+.container-todo__box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.603);
+    border-radius: 7px;
+    width: 32%;
+    height: 100px;
+}
+.container-todo__box-check{
+    accent-color: var(--color-primary);
+}
+.container-todo__box-title{
+    color: rgb(59, 59, 59);
+}
+
+.container-todo__box-action__delete{
+    width: 25px;
+    height: 25px;   
+    margin-left: 10px;
+}
+.container-todo__box-action__edit{
+    width: 25px;
+    height: 25px;
+}
