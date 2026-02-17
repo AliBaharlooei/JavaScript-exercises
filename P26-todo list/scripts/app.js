@@ -45,14 +45,26 @@ let addTask = () => {
 };
 //=> btn add task
 btnAddTask.addEventListener('click', addTask);
-//=> btn compeleted task
+//=> btn completion task
 containerTodo.addEventListener('click',(element)=>{
-    let isChecked = element.target;
-    let titleBox = element.target.closest(".container-todo__box-check").nextElementSibling;
-    if(isChecked.checked){
-        titleBox.classList.add("ticked");
-    }
-    else{
-        titleBox.classList.remove("ticked");
+    let isCkeckBoxClick = element.target.name == "todoCheck";
+    if(isCkeckBoxClick){
+        let isChecked = element.target;
+        let CheckBox = element.target.closest(".container-todo__box-check");
+        let titleBox = CheckBox.parentElement.querySelector(".container-todo__box-title");
+        if(isChecked.checked){
+            titleBox.classList.add("ticked");
+        }
+        else{
+            titleBox.classList.remove("ticked");
+        };
     };
 });
+//=> btn deleted task
+containerTodo.addEventListener('click',(element)=>{
+    let taskBox = element.target.closest(".container-todo__box");
+    let isChecked = element.target.classList.contains("container-todo__box-action__delete");
+    if(isChecked){
+        taskBox.remove()
+    }
+})
