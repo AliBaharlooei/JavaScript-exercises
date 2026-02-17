@@ -114,7 +114,10 @@
 .container-todo__box-title{
     color: rgb(59, 59, 59);
 }
-
+.ticked {
+    color: var(--color-primary);
+    text-decoration: line-through;
+}
 .container-todo__box-action__delete{
     width: 25px;
     height: 25px;   

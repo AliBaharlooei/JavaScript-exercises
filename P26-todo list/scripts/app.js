@@ -18,7 +18,7 @@ let addTask = () => {
     box.appendChild(boxCheck);
     // container todo box text
     const boxTitle = document.createElement('div');
-    boxCheck.classList.add("container-todo__box-title");
+    boxTitle.classList.add("container-todo__box-title");
     const titleTop = document.createElement('h3');
     titleTop.classList.add("container-todo__box-title__top");
     titleTop.textContent = taskTitle;
@@ -30,7 +30,7 @@ let addTask = () => {
     box.appendChild(boxTitle);
     // container todo box action
     const boxAction = document.createElement('div');
-    boxCheck.classList.add("container-todo__box-action");
+    boxAction.classList.add("container-todo__box-action");
     const imgDelete = document.createElement('img');
     imgDelete.src = "./imgs/icons8-bin-48.png";
     imgDelete.classList.add("container-todo__box-action__delete");
@@ -43,5 +43,16 @@ let addTask = () => {
     // append to box
     containerTodo.appendChild(box);
 };
-
+//=> btn add task
 btnAddTask.addEventListener('click', addTask);
+//=> btn compeleted task
+containerTodo.addEventListener('click',(element)=>{
+    let isChecked = element.target;
+    let titleBox = element.target.closest(".container-todo__box-check").nextElementSibling;
+    if(isChecked.checked){
+        titleBox.classList.add("ticked");
+    }
+    else{
+        titleBox.classList.remove("ticked");
+    };
+});
