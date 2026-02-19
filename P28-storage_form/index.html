@@ -17,7 +17,7 @@
                 <label for="age">سن</label>
                 <input type="text" name="age" id="age">
                 <div class="btn-grup">
-                    <button class="btn-next">مرحله بعدی</button>
+                    <button onclick="showStep(2)" class="btn-next">مرحله بعدی</button>
                 </div>
             </div>
         </div>
@@ -30,8 +30,8 @@
                 <label for="city">شهر</label>
                 <input type="text" name="city" id="city">
                 <div class="btn-grup">
-                    <button class="btn-next">مرحله بعدی</button>
-                    <button class="btn-previous">مرحله قبلی</button>
+                    <button onclick="showStep(3)" class="btn-next">مرحله بعدی</button>
+                    <button onclick="showStep(1)" class="btn-previous">مرحله قبلی</button>
                 </div>
             </div>
         </div>
@@ -39,13 +39,13 @@
          <div id="step3" class="step">
             <h2>مرحله سوم : تایید</h2>
             <div class="form-grup">
-                <p>نام : <b id="confirm-name">علی</b></p>
-                <p>سن : <b id="confirm-age">21</b></p>
-                <p>استان : <b id="confirm-province">تهران</b></p>
-                <p>شهر : <b id="confirm-city">اندیشه</b></p>
+                <p>نام : <b id="confirm-name"></b></p>
+                <p>سن : <b id="confirm-age"></b></p>
+                <p>استان : <b id="confirm-province"></b></p>
+                <p>شهر : <b id="confirm-city"></b></p>
                 <div class="btn-grup">
                     <button class="btn-submit">ارسال</button>
-                    <button class="btn-previous">مرحله قبلی</button>
+                    <button onclick="showStep(2)" class="btn-previous">مرحله قبلی</button>
                 </div>
             </div>
         </div>
