@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>فرم</title>
 </head>
 <body>
     <div class="container">
          <!-- info form -->
-        <div id="step1">
+        <div id="step1" class="step">
             <h2>مرحله اول : اطلاعات شخصی</h2>
             <div class="form-grup">
                 <label for="full-name">نام و نام خانوادگی</label>
                 <input type="text" name="fullName" id="full-name">
                 <label for="age">سن</label>
                 <input type="text" name="age" id="age">
-                <button class="btn-next">مرحله بعدی</button>
+                <div class="btn-grup">
+                    <button class="btn-next">مرحله بعدی</button>
+                </div>
             </div>
         </div>
         <!-- address form -->
-        <div id="step2">
+        <div id="step2" class="step">
             <h2>مرحله دوم : آدرس</h2>
             <div class="form-grup">
                 <label for="province">استان</label>
@@ -33,7 +36,7 @@
             </div>
         </div>
         <!-- show info -->
-         <div id="step">
+         <div id="step3" class="step">
             <h2>مرحله سوم : تایید</h2>
             <div class="form-grup">
                 <p>نام : <b id="confirm-name">علی</b></p>
